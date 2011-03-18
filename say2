@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+
+# sleep `python -c 'print(2*1*1)'`;say hello;
+import os,sys,shutil
+import subprocess
+import time 
+
+expression = sys.argv[1]
+phrase = sys.argv[2]
+
+timesec = eval(expression) 
+
+app = "/usr/bin/say " + phrase
+
+tailProcess = None
+time.sleep(timesec);
+try:
+     os.popen(app)
+     #retval = subprocess.call(["open", "-W", app])
+except KeyboardInterrupt:
+     print "got ^C, exiting..."
+     #killProcessByName(standalone_app_dir)
+

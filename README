@@ -1,0 +1,7 @@
+It says things in t-minus X seconds. Only works with Mac OS X: 
+
+Example of usage: 
+
+./say2 60*60 "Go buy the milk" 
+
+It will say the phrase in 1 hour...
